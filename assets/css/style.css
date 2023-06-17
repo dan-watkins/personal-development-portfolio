@@ -1,0 +1,27 @@
+:root {
+    --blue: #89CFF0;
+
+}
+
+nav {
+    justify-content: right;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: var(--blue);
+    padding: 1rem;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 1rem;
+}
+
+.background-image {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(./../images/stock.jpg);
+    background-size: cover;
+    background-position: center;
+}
