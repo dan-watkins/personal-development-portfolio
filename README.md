@@ -22,4 +22,4 @@ Simply clone the repository. The current project is deployed using GitHub pages,
 ## Credits
 Credit to Adham Dannaway, whose portfolio was an inspiration for the layout I used. While not very close his site serves as the end goal I would have for how my own portfolio would eventually appear.
 
-![Adham-Dannaway](https://arc.dev/developer-blog/web-developer-portfolio/)
+https://arc.dev/developer-blog/web-developer-portfolio/
