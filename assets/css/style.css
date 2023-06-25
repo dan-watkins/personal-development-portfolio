@@ -22,13 +22,12 @@ body {
     margin: 0;
 }
 
-/* Setting max image width to keep inside the containers when necessary */
 img {
-    max-width: 100%;
-    height: 90%;
-    object-fit: cover;
-
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }
+
 
 /* Setting items in the header to align right in a row */
 nav {
@@ -85,9 +84,8 @@ nav ul li {
     float: right;
 }
 
-/* Portfolio section for App containers used below */
-.portfolio {
-    display: inline-block;
+/* Removing flexbox from main section styling & elements */
+.section-portfolio {
     padding: 1rem;
     width: 100%;
     outline: 2px solid;
@@ -98,17 +96,41 @@ nav ul li {
     position: relative;
 }
 
-/* Containers for each deployed application */
-.portfolio-container {
-    display: inline-block;
-    flex: 2 0 100%;
+/* Portfolio div for App containers used below */
+.portfolio {
+    display: flex;
+    padding: 1rem;
+    background-color: var(--blue);
+    justify-content: center;
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+}
+
+/* Large container for first application, which must be larger than the rest */
+.portfolio-container-large {
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: red;
-    height: 250px;
+    height: 300px;
+    width: 300px; 
     line-height: 1.5rem;
     margin-right: 20px;
     position: relative;
+    overflow: hidden;
+}
+
+/* Small container for other apps outside the first */
+.portfolio-container-small {
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    line-height: 1.5rem;
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 /* Adds a banner "header" element to the application containers */
